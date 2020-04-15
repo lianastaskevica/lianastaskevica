@@ -87,21 +87,33 @@ If there are more than 3 attribute values for the attribute, the "Show more +" b
 
 ### Mobile
 
-![PDP mobile](https://i.ibb.co/NSnYKgN/Screenshot-2020-04-01-at-15-02-16.png)
-
 On the mobile product description page, the vertical slider is implemented.
 
 The user has an ability to go back to the previous category page by clicking on the "Back to X" button, where X is the category he was browsing.
 
 To see the product description and choose available product options, the user needs to drag the bottom element up.
 
+>The dragbar can be opened by sliding down after the last image of the product image slider.
+
 To return back to the product image gallery, the user can drag the same element down or click the "X" button in the upper-right corner.
 
 The product options will appear in the dropdown. No matter what attribute type is set for your attributes, they will be rendered as dropdowns as per design.
 
+The product short description is rendered under the "Add to Cart" button.
+
+The product description is rendered in the expandable tab.
+
 ### Desktop
 
-TBD
+On the desktop PDP, product images are rendered vertically one by one.
+
+>You can download both horizontal and vertical images to the products, however the preferred option is vertical due to the mobile slider.
+
+The position of the product information block on the right side is fixed, therefore when scrolling the page down, you will see only the image gallery scrolling.
+
+The roduct short description is rendered under the product price.
+
+The product description is rendered in the expandable tab.
 
 ## My Favorites
 
@@ -111,5 +123,75 @@ On the desktop view of my favorites, the products are rendered by 4 in the line.
 
 In my favorites, the user can add products to cart one by one, go back to the product page by clicking on the "View Item" button, or remove products from the list.
 
+**NOTE!** Only logged in users can add items to the wishlist.
+
 ## Contact Us
 
+https://vgb.scandipwa.cloud/contact-us
+
+There are 4 expandable tabs displayed on the contact us page:
+
+1. CALL CENTER VAGABOND
+
+On the first line, the store phone number is rendered.
+
+It should be set in **Admin -> Stores -> Configuration -> General -> General -> Store Information -> Store Phone Number**
+
+On the second line, the working hours are rendered.
+
+They should be set in **Admin -> Stores -> Configuration -> General -> General -> Store Information -> Store Hours of Operation**
+
+2. E-MAIL SUPPORT
+
+The support email address can be managed in **Admin -> Stores -> Configuration -> General -> Store Email Addresses -> Customer Support -> Sender Email**
+
+3. STAY SOCIAL
+
+Under the "Find us here:" note, the CMS block is located.
+
+To display the CMS block in the expandable tab, the block identifier should be "**contact-us-social**".
+
+>When saving the block, make sure your content is not covered in the **p** tag.
+
+4. FORM APPLICATION
+
+The contact us form is located in under the form application tab.
+
+On click on the "Send Your Message" button, the form applications are sent to the email address, set in **Admin -> Stores -> Configuration -> General -> Store Email Addresses -> Customer Support -> Sender Email**
+
+## Store Location
+
+https://vgb.scandipwa.cloud/stores
+
+On the stores page, the dropdown with all available cities is located.
+
+By default, the dropdown title is Romania and can be changed only manually through the code.
+
+Inside the dropdown, you will see all the available cities that are set to you stores in **Admin -> Scandiweb -> Store finder -> Stores -> Store detailed view -> City Name**.
+
+>If there are multiple stores set for one city, the city name will not be dublicated in the dropdown.
+
+**TO CREATE A NEW STORE**
+
+1. On the admin sidebar, choose **Scandiweb**
+2. Under **Store Finder**, choose **Stores**
+3. Tap on **Create new store**
+4. Fill in the **store name** (will appear on the storefront)
+5. Fill in the **store ID** (will not appear, but is a required field)
+6. Fill in the **city name** (will appear in the dropdown on the storefront)
+7. Fill in the **city ID** (will not appear, but is a required field)
+8. Fill in the **store address** (will appear on the storefront)
+9. Fill in the **phone number** (will appear on the storefront)
+10. Add the store **image**
+11. Under the **More Info**, fill in the **Store Working Hours** (will appear on the storefront)
+12. Under the **More Info**, add the **Extra image 1**
+13.  Under the **More Info**, add the **Extra image 2**
+14.  When complete, tap **Save Store**
+
+**NOTE!** For the changes to appear on the storefront, go to the Magento Cache Management, and choose **Flush Cache Storage**.
+
+## Cookie Notice
+
+Cookie notice can be enabled on the storefront by following the guide [here](https://scandiweb.atlassian.net/wiki/spaces/SUG/pages/1693286407/Cookie+Law+Compliance).
+
+The Cookie Popup Read more Link text was changed to the "Click here for more information on our Cookies policy"
