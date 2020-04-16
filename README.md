@@ -157,7 +157,9 @@ To display the CMS block in the expandable tab, the block identifier should be "
 
 The contact us form is located in under the form application tab.
 
-On click on the "Send Your Message" button, the form applications are sent to the email address, set in **Admin -> Stores -> Configuration -> General -> Store Email Addresses -> Customer Support -> Sender Email**
+On click on the "Send Your Message" button, the form applications are sent to the email address, set in **Admin -> Stores -> Configuration -> General -> Contacts -> Email Options -> Send Email To**
+
+>**NOTE!** Make sure the contact us is enabled in **Admin -> Stores -> Configuration -> General -> Contacts -> Contact Us -> Enable Contact Us**
 
 ## Store Location
 
