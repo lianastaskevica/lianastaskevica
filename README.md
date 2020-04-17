@@ -223,6 +223,7 @@ TO SET UP FACEBOOK SOCIAL LOGIN:
 (https://vgb.scandipwa.cloud/sociallogin/endpoint/?hauth.done=Facebook &
 https://vgb.scandipwa.cloud/sociallogin/endpoint/?hauth_done=Facebook)
 11. Save changes
+12. Insert the credentials to **Admin->Scandiweb->Social Login->Configuration**
 
 ### Google
 
@@ -244,3 +245,4 @@ TO SET UP GOOGLE SOCIAL LOGIN:
     1.  Authorized redirect URIs = https://vgb.scandipwa.cloud/sociallogin/endpoint/?hauth.done=Google
 14. Press **Create** 
 15. In PopUp window you will find You Credentials
+16. Insert the credentials to **Admin->Scandiweb->Social Login->Configuration**
