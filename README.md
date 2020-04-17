@@ -197,3 +197,50 @@ Inside the dropdown, you will see all the available cities that are set to you s
 Cookie notice can be enabled on the storefront by following the guide [here](https://scandiweb.atlassian.net/wiki/spaces/SUG/pages/1693286407/Cookie+Law+Compliance).
 
 The Cookie Popup Read more Link text was changed to the "Click here for more information on our Cookies policy"
+
+## Social Login
+
+### Facebook
+
+>**Note:** *Verify Your Business on Facebook. You can connect your app to a Facebook Business Manager account, if applicable, and get started on the business verification process. You'll just need to upload a document showing your business or organization's name and physical address. After successfully completing business verification, you'll also need to sign either 1 or 2 contracts. [Learn more](https://developers.facebook.com/docs/apps/review/#business-verification)*
+
+>**Note:** *Individual Verification Paused.
+Due to coronavirus (COVID-19), we have temporarily paused Individual Verification to focus our reviewers on efforts that help keep people informed and safe. We know this review step is important and will resume it as soon as we can. [Learn More](https://developers.facebook.com/blog/post/2020/03/24/pausing-individual-verification/)*
+
+TO SET UP FACEBOOK SOCIAL LOGIN:
+
+1. Visit https://developers.facebook.com/
+2. LogIn
+3. Go to **MyApps**
+4. Choose **Create App**
+5. Fill in the necessary fields
+6. Click **Set up**
+7. At the App dashboard Click **Settings -> Basic**
+8. Fill in the necessary fields
+9. Also there You will be able to find **App ID** and **App Secret**
+10. Go to **Products -> Facebook Login -> Settings**
+ Fill field Valid OAuth Redirect URIs like: https://base_url/sociallogin/endpoint/?hauth.done=Facebook https://base_url/sociallogin/endpoint/?hauth_done=Facebook & 
+(https://vgb.scandipwa.cloud/sociallogin/endpoint/?hauth.done=Facebook &
+https://vgb.scandipwa.cloud/sociallogin/endpoint/?hauth_done=Facebook)
+11. Save changes
+
+### Google
+
+TO SET UP GOOGLE SOCIAL LOGIN:
+
+1. Visit [console.cloud.google.com/](console.cloud.google.com/)
+2. LogIn
+3. In Header (Right After Google Cloud Platform), select **My Projects** 
+4. Choose **New Project**
+5. Fill in the necessary fields
+6. At left Menu Bar click On **APIs & Services**
+7. At left Menu Bar click On **OAuth consent screen** 
+8. Choose User Type **Internal** for testing  or **External** for public
+9. Fill in the necessary fields. If Publick - wait for verification
+10. Go to **Credentials** and click **+CREATE CREDENTIALS** 
+11. Choose **OAuth client ID**
+12. **Application type** : Web Application 
+13. Fill in the necessary fields 
+    1.  Authorized redirect URIs = https://vgb.scandipwa.cloud/sociallogin/endpoint/?hauth.done=Google
+14. Press **Create** 
+15. In PopUp window you will find You Credentials
