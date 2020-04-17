@@ -67,7 +67,9 @@ Follow the guide [here](https://scandiweb.atlassian.net/wiki/spaces/SUG/pages/16
 
 On the product listing page, each 5th product (starting from the first one) is a hero product that gets displayed in full-screen.
 
-The attribute (in our example - "New") will appear on the hero products only.
+The attribute (in our example - "New") will appear on the hero products only. 
+
+**NOTE!** The images that appear on the product listing page should be set as "Small" under the product configurations in admin.
 
 **TO SET AN ATTRIBUTE TO BE VISIBLE ON PLP:**
 
@@ -77,13 +79,15 @@ Scroll down until the **content customization** section and see the **Product Li
 
 ***
 
-Category description and category title are displayed under the header and are centralized.
+Category description and category title are displayed under the header.
 
 Filters are opened in the overlay. No matter what attribute type is set for your filterable attributes, they will be rendered vertically as per design.
 
 If there are more than 3 attribute values for the attribute, the "Show more +" button will appear. On click, it changes to "Show less -" and the additional attribute values appear visible.
 
 ## Product Description Page
+
+**NOTE!** The "Small" type of images that are set under the product configurations in admin are hidden on the product description page to have an ability to set horizontal images on PLP.
 
 ### Mobile
 
